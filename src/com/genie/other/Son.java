@@ -3,12 +3,32 @@ package com.genie.other;
 import java.util.Scanner;
 
 public class Son extends Base {
+
+    private int age;
+
+    public Son() {
+    }
+
+    public Son(int _age) {
+        age = _age;
+    }
+
+    @Override
     public void method() {
         System.out.println("Son");
     }
 
-    public void method1() {
-        System.out.println("SonB");
+    public void method3(String b, int a) {
+        System.out.println(b);
+    }
+
+    private String method3(int b, String c) {
+        System.out.println(b);
+        return c;
+    }
+
+    public static void method2() {
+        System.out.println("static method2");
     }
 
     public static void main(String[] args) {
