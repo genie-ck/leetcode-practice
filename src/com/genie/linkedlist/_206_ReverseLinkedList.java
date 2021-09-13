@@ -74,6 +74,7 @@ public class _206_ReverseLinkedList {
                 return head;
             }
             ListNode p = reverseList(head.next);
+            //递归到倒数第二个节点时，4的next也就是5把后继指向4,4的后继指向了空。
             //4->5->null  4的5的后继 给了4 4的后继设为null  4<-5
             head.next.next = head;
             head.next = null;

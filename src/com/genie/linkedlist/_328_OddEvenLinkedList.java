@@ -24,7 +24,7 @@
 
 package com.genie.linkedlist;
 
-import com.genie.linkedlist.ListNode;
+
 
 public class _328_OddEvenLinkedList {
     public static void main(String[] args) {

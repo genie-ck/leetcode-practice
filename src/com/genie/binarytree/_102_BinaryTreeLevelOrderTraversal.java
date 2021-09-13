@@ -50,6 +50,7 @@ public class _102_BinaryTreeLevelOrderTraversal {
             queue.offer(root);
             while (!queue.isEmpty()) {
                 List<Integer> list = new ArrayList<>();
+                //坑坑 要把队列长度先赋值，不然后续加子节点，队列长度就变了。。。
                 int length = queue.size();
                 for (int i = 1; i <= length; ++i) {
                     TreeNode node = queue.poll();
